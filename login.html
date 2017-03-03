@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+  </head>
+  <body>
+    <header>
+      <img src="./imgs/login/logo.png" alt="">
+      <span>IT综合管理系统</span>
+    </header>
+    <div class="login-div">
+      <div class="container">
+        <p>恒丰银行IT综合管理系统</p>
+        <div class="input-container">
+          <div class="input-group">
+            <i class="icon icon-left icon-me"></i>
+            <input type="text" name="username" placeholder="请输入您的用户名"/>
+            <i class="icon icon-right icon-close icon-opacity" onclick="userNameClear(event)"></i>
+          </div>
+          <div class="input-group">
+            <i class="icon icon-left icon-lock"></i>
+            <input type="password" name="password" placeholder="请输入您的密码"/>
+            <i class="icon icon-right icon-eye icon-opacity" onclick="passwordShow(event)"></i>
+          </div>
+        </div>
+        <div class="parent-container">
+          <div class="left">
+            <i class="icon icon-fwq"></i>
+            <span>服务器管理</span>
+          </div>
+          <div class="right">
+            <i class="icon icon-bz"></i>
+            <span>支持及帮助</span>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="login-btn" onclick="login()">立即登录</a>
+      </div>
+    </div>
+    <script src="./js/login.js" charset="utf-8"></script>
+  </body>
+</html>
