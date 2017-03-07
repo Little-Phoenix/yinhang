@@ -3,16 +3,6 @@ html, body{
   padding: 0;
   color: #333;
   font-family: "Microsoft YaHei" !important;
-  min-width: 1000px;
-  height: 100%;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -o-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -o-flex-direction: column;
 }
 
 ul, li {
@@ -29,4 +19,47 @@ a {
 input:focus, input:active, input:visited {
   border: 0;
   outline: none;
+}
+
+
+table {
+  background-color: #fff;
+  border-spacing: 0;
+  font-size: 16px;
+  border-color: #E3E3E3;
+  width: 100%;
+  table-layout:fixed;
+  border: 1px solid #e3e3e3;
+}
+
+table .title {
+  height: 60px;
+  background-color: #F6F6F6;
+  border: 1px solid #E3E3E3;
+  box-sizing: border-box;
+}
+
+table .title th {
+  font-weight: normal;
+  color: #333;
+  padding: 0 18px;
+}
+
+table tr td {
+  padding: 0 18px;
+  height: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  color: #838383;
+}
+
+table tr td:last-child {
+  border-right: 0px;
+}
+
+table tr td:first-child {
+  color: #333;
 }

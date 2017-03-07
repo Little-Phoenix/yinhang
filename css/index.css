@@ -1,3 +1,15 @@
+html, body{
+  min-width: 1000px;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+}
 
 header {
   height: 88px;
