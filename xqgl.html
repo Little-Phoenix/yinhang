@@ -48,10 +48,10 @@
         </div>
         <div class="part2">
           <div class="tab-panel">
-            <a class="panel current" href="javascript:void(0)" name="panel1">
+            <a class="panel current" href="javascript:void(0)" name="panel-btn" for="panel1">
               待审批协作部门
             </a>
-            <a class="panel" href="javascript:void(0)" name="panel2">
+            <a class="panel" href="javascript:void(0)" name="panel-btn" for="panel2">
               协作部门
             </a>
             <div class="panel-content" id="panel1">
@@ -73,7 +73,7 @@
                 <a class="add-btn" href="javascript:void(0)">添加</a>
               </div>
             </div>
-            <div class="panel-content" id="panel2">
+            <div class="panel-content panel-hide" id="panel2">
 
             </div>
           </div>
@@ -83,10 +83,11 @@
           </div>
         </div>
         <div class="btns">
-          <a href="javascript: void(0)">取消</a>
-          <a href="javascript: void(0)">确定</a>
+          <a href="javascript: void(0)">取&nbsp;消</a>
+          <a href="javascript: void(0)" class="active">确&nbsp;定</a>
         </div>
       </div>
     </div>
+    <script src="./js/common.js" charset="utf-8"></script>
   </body>
 </html>

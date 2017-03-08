@@ -1,0 +1,87 @@
+.container {
+  padding: 0 20px;
+}
+
+.container>p {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.container table {
+  border-color: #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.container table td {
+  border-color: #ccc;
+}
+
+select, input {
+  font-size: 14px;
+}
+
+.container table th:first-child {
+  width: 187px;
+}
+
+.container table th:nth-child(2) {
+  width: 131px;
+}
+
+.container table th {
+  background-color: #E6E6E6;
+  font-weight: bold;
+}
+
+.btns {
+  padding-top: 57px;
+  text-align: center;
+}
+
+.btns>a {
+  height: 40px;
+  padding: 0 14px;
+  color: #fff;
+  background-color: #BABBBD;
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btns>a:first-child {
+  margin-right: 40px;
+}
+
+.btns>a.active {
+  background-color: #BCA070;
+}
+
+select.condition {
+  border: 0;
+  width: 100%;
+  outline: none;
+}
+
+.input-sign {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  background: url('../imgs/icons/icon-copy.png') no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.container table tr td input {
+  width: calc(100% - 17px);
+  width: -webkit-calc(100% - 17px);
+  width: -moz-calc(100% - 17px);
+  width: -o-calc(100% - 17px);
+  border: 0;
+  outline: none;
+}
