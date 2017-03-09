@@ -118,7 +118,7 @@ table tr td:first-child {
   display: -o-flex;
 }
 
-.input-group>.input-item {
+.input-group>div {
   border: 1px solid #CCCCCC;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -129,6 +129,10 @@ table tr td:first-child {
   margin-top: -1px;
   height: 50px;
   line-height: 50px;
+}
+
+.input-group>div:first-child {
+  margin-left: 0px;
 }
 
 .input-group>.input-title {

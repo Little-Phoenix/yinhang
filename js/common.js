@@ -1,32 +1,39 @@
 (function(win, doc){
 
-  var panel = doc.getElementsByClassName('tab-panel')[0];
+  var panels = doc.getElementsByClassName('tab-panel');
   var tabBtns = doc.getElementsByName('panel-btn');
 
   function addPanelClickEvent() {
-    panel.addEventListener('click', function(event) {
-      if(event.target.tagName === 'A' && event.target.name === 'panel-btn') {
-        //切换content
-        var panelFor = event.target.getAttribute('for');
-        var panels = doc.getElementsByClassName('panel-content');
-        for(var i=0; i<panels.length; i++) {
-          var currentPanel = panels[i];
-          if(currentPanel.id === panelFor) {
-            currentPanel.className = 'panel-content';
-          } else {
-            currentPanel.className = 'panel-content panel-hide';
+
+    for(var i=0; i<panels.length; i++ ){
+      let panel = panels[i];
+      panel.addEventListener('click', function(event) {
+        if(event.target.tagName === 'A' && event.target.name === 'panel-btn') {
+          //切换content
+          var panelFor = event.target.getAttribute('for');
+          var panels = doc.getElementsByClassName('panel-content');
+          for(var i=0; i<panels.length; i++) {
+            var currentPanel = panels[i];
+            if(currentPanel.id === panelFor && currentPanel.parentNode.className === event.target.parentNode.className) {
+              currentPanel.className = 'panel-content';
+            } else if(currentPanel.parentNode.className === event.target.parentNode.className){
+              currentPanel.className = 'panel-content panel-hide';
+            }
           }
+
+
+          //将所有的tabbtn改为位选中状态
+          for(var i=0; i<tabBtns.length; i++) {
+            if(tabBtns[i].parentNode.className === event.target.parentNode.className) {
+              tabBtns[i].className = 'panel';
+            }
+
+          }
+          event.target.className = event.target.className + ' current';
+
         }
-
-
-        //将所有的tabbtn改为位选中状态
-        for(var i=0; i<tabBtns.length; i++) {
-          tabBtns[i].className = 'panel';
-        }
-        event.target.className = event.target.className + ' current';
-
-      }
-    })
+      })
+    }
   }
 
 

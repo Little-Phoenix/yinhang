@@ -107,6 +107,9 @@ body {
 .panel{
   min-width: 75px;
 }
+.part:last-child {
+  margin-top: 60px;
+}
 
 .part>.title {
   display: flex;
@@ -149,19 +152,17 @@ body {
 }
 
 .panel-content .content {
-  height: auto;
-  max-height: 1000px;
   transition: max-height 1s ease;
   -webkit-transition: max-height 1s ease;
   -moz-transition: max-height 1s ease;
   -o-transition: max-height 1s ease;
+  max-height: 1000px;
 
 }
 
 .panel-content .hide-content {
-  max-height: 100px;
-  height: 0px;
+  max-height: 0px;
   overflow: hidden;
   border-top: 1px solid #ccc;
-
+  margin-right: 0px;
 }
