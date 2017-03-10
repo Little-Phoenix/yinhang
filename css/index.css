@@ -208,6 +208,19 @@ header::after {
   color: #062B5F;
 }
 
+.left-nav>ul>li>a.selected::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 6px;
+  background-color: #C09B57;
+  height: 100%;
+}
+
+.unfold>ul>li>a.selected::before {
+  width: 0px;
+}
+
 .left-nav>ul>li>a.selected>.icon-to {
   border-color: #062B5F;
 }
@@ -223,66 +236,116 @@ header::after {
   background-position: center;
 }
 
+
 .icon-xqyx {
   background-image: url('../imgs/icons/icon-xqyx.png');
+}
+a.selected .icon-xqyx {
+  background-image: url('../imgs/icons/icon-xqyx-s.png');
 }
 
 .icon-lx {
   background-image: url('../imgs/icons/icon-lx.png');
 }
 
+a.selected .icon-lx {
+  background-image: url('../imgs/icons/icon-lx-s.png');
+}
+
 .icon-xm {
-  background-image: url('../imgs/icons/icon-lx.png');
+  background-image: url('../imgs/icons/icon-xm.png');
+}
+
+a.selected .icon-xm {
+  background-image: url('../imgs/icons/icon-xm-s.png')
 }
 
 .icon-xq {
   background-image: url('../imgs/icons/icon-xq.png');
 }
 
+a.selected .icon-xq{
+  background-image: url('../imgs/icons/icon-xq-s.png');
+}
+
 .icon-xqrw {
   background-image: url('../imgs/icons/icon-xqrw.png');
+}
+
+a.selected .icon-xqrw {
+  background-image: url('../imgs/icons/icon-xqrw-s.png');
 }
 
 .icon-xqbg {
   background-image: url('../imgs/icons/icon-xqbg.png');
 }
 
+a.selected .icon-xqbg {
+  background-image: url('../imgs/icons/icon-xqbg-s.png');
+}
+
 .icon-xtrw {
   background-image: url('../imgs/icons/icon-xtrw.png');
+}
+a.selected .icon-xtrw {
+  background-image: url('../imgs/icons/icon-xtrw-s.png');
 }
 
 .icon-jhbg {
   background-image: url('../imgs/icons/icon-jhbg.png');
 }
+a.selected .icon-jhbg {
+  background-image: url('../imgs/icons/icon-jhbg-s.png');
+}
 
 .icon-tc {
   background-image: url('../imgs/icons/icon-tc.png');
+}
+a.selected .icon-tc {
+  background-image: url('../imgs/icons/icon-tc-s.png');
 }
 
 .icon-qxxz {
   background-image: url('../imgs/icons/icon-qxxz.png');
 }
+a.selected .icon-qxxz {
+  background-image: url('../imgs/icons/icon-qxxz-s.png');
+}
 
 .icon-xt {
   background-image: url('../imgs/icons/icon-xt.png');
+}
+a.selected .icon-xt {
+  background-image: url('../imgs/icons/icon-xt-s.png');
 }
 
 .icon-tjbb {
   background-image: url('../imgs/icons/icon-tjbb.png');
 }
+a.selected .icon-tjbb {
+  background-image: url('../imgs/icons/icon-tjbb-s.png');
+}
 
 .icon-syzd {
   background-image: url('../imgs/icons/icon-syzd.png');
+}
+a.selected .icon-syzd {
+  background-image: url('../imgs/icons/icon-syzd-s.png');
 }
 
 .icon-rcwh {
   background-image: url('../imgs/icons/icon-rcwh.png');
 }
+a.selected .icon-rcwh {
+  background-image: url('../imgs/icons/icon-rcwh-s.png');
+}
 
 .icon-yhsc {
   background-image: url('../imgs/icons/icon-yhsc.png');
 }
-
+a.selected .icon-yhsc {
+  background-image: url('../imgs/icons/icon-yhsc-s.png');
+}
 .icon-to {
   border-top: 1px solid #F5F9FC;
   border-right: 1px solid #F5F9FC;

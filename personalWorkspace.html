@@ -5,6 +5,7 @@
     <title>个人工作区</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/personalWorkspace.css">
+    <link rel="stylesheet" href="./css/calendar.css">
   </head>
   <body>
     <div class="container">
@@ -75,7 +76,7 @@
           <div class="content">
             <table>
               <tr class="title">
-                <th>名称名称名称名称名称名称名称名称名称</th>
+                <th>名称</th>
                 <th>所属</th>
                 <th>状态</th>
                 <th>时间</th>
@@ -124,11 +125,25 @@
             <i class="icon icon-calander"></i>
             <span>日历</span>
           </div>
-          <div class="calender">
+          <div class="calendar-div">
 
           </div>
         </div>
       </div>
     </div>
+    <script src="./js/calendar.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var calendarDiv = document.getElementsByClassName('calendar-div')[0];
+      var calendar = new Calendar(calendarDiv);
+      calendar.init()
+
+
+      function calendarPre() {
+        calendar.calendarPre();
+      }
+      function calendarNext() {
+        calendar.calendarNext();
+      }
+    </script>
   </body>
 </html>

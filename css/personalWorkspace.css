@@ -66,7 +66,7 @@ html, body {
 }
 
 .icon-calander {
-  background-image: url('../imgs/icons/icon-calander.png');
+  background-image: url('../imgs/icons/icon-calendar.png');
   width: 22px;
   height: 23px;
 }
@@ -118,54 +118,4 @@ html, body {
   -webkit-transform: translateY(-50%) rotate(45deg);
   -moz-transform: translateY(-50%) rotate(45deg);
   -o-transform: translateY(-50%) rotate(45deg);
-}
-
-.table-page {
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  right: 0;
-}
-
-.table-page>span {
-  color: #072B5D;
-  vertical-align: middle;
-}
-
-.table-page>a {
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-size: initial;
-  background-position: center;
-  display: inline-block;
-  background-color: #B4B4B4;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -o-border-radius: 2px;
-  vertical-align: middle;
-}
-
-.table-page>a.selected {
-  background-color: #072B5F;
-}
-
-.table-page>.separator, .table-page>.end-page {
-  color: #B4B4B4;
-}
-
-.page-pre {
-  background-image: url('../imgs/icons/icon-pre.png');
-  margin-right: 12px;
-}
-
-.page-to {
-  background-image: url('../imgs/icons/icon-next.png');
-  margin-left: 12px;
 }

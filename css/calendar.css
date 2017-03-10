@@ -1,0 +1,67 @@
+.calendar table{
+  border: 0px;
+}
+
+.calendar table td {
+  border: 0px;
+  text-align: center;
+  padding: 0;
+  height: 40px;
+  color: #1E1E1E;
+}
+
+.calendar table td.today {
+  background-image: url('../imgs/icons/icon-calendar-selected.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calendar table th {
+  font-weight: normal;
+}
+
+.calendar table th:nth-child(6), .calendar table th:nth-child(7) {
+  color: #C29957;
+}
+
+.calendar>.top {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.calendar>.top>a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-color: #B4B4B4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.calendar>.top>span {
+  display: inline-block;
+  vertical-align: middle;
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar .left-btn {
+  background-image: url('../imgs/icons/icon-pre.png');
+}
+
+.calendar .right-btn {
+  background-image: url('../imgs/icons/icon-next.png');
+}

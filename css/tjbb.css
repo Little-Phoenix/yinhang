@@ -1,0 +1,145 @@
+body {
+  min-width: 1156px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.container>.title {
+  padding: 20px 0;
+  position: relative;
+  font-size: 18px;
+}
+
+
+.container>.title>a{
+  display: inline-block;
+  border: 2px solid #969696;
+  width: 90px;
+  height: 30px;
+  color: #BFC0C2;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  position: absolute;
+  margin-top: -17px;
+  top: 50%;
+  right: 0px;
+  font-size: 16px;
+}
+
+.container>.title>a>.icon-edit {
+  background: url('../imgs/icons/icon-edit.png') no-repeat;
+  width: 18px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.container>.title>a>span{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+
+.filter {
+  border: 1px solid #D9DADB;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 17px;
+  background-color: #E6E6E6;
+  margin-bottom: 25px;
+}
+
+.query-group {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 42px;
+  margin-bottom: 10px;
+}
+
+.query-group>div {
+  display: inline-block;
+}
+
+.query-group input {
+  color: #ccc;
+}
+
+.query-group>.query-content>input {
+  width: 166px;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.query-a {
+  font-size: 14px;
+  color: #A1A1A1;
+}
+
+.have-border {
+  border-right: 2px solid #A1A1A1;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.query-btn {
+  display: inline-block;
+  height: 38px;
+  color: #fff;
+  width: 76px;
+  background-color: #BCA070;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+table td {
+  text-align: center;
+}
+
+table td ul {
+  width: 100%;
+
+}
+
+table td li {
+  border-top: 1px solid #ccc;
+}
+
+table td ul li:first-child {
+  border-top: 0px;
+}
+
+table tr td:nth-child(14), table tr td:nth-child(15) {
+  padding: 0;
+}
+
+table tr td:nth-child(3), table tr td:nth-child(4) {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.date-input{
+  background-image: url('../imgs/icons/icon-query-calendar.png');
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}

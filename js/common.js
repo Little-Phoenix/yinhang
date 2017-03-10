@@ -58,7 +58,75 @@
     }
   }
 
+
+  var selectGroups = doc.getElementsByClassName('select-group');
+
+  //下拉框操作
+  function selectGroupOption() {
+    for(var i=0; i<selectGroups.length; i++) {
+      var selectGroup = selectGroups[i];
+      let showInput = selectGroup.getElementsByTagName('input')[0];//name='show'的input框
+      let keyInput = selectGroup.getElementsByTagName('input')[1];//name='key'的input框
+      let options = selectGroup.getElementsByTagName('ul')[0];//ul
+      function init() {
+
+        let firstOption = options.children[0];
+        let key = firstOption.id;
+        let value = firstOption.innerHTML;
+
+        showInput.value = value;
+        keyInput.value = key;
+
+        setOptionSelect(options.children, key);
+
+        clickOptions(options.children);//在ul中点击li
+      }
+
+      init();
+
+      function setOptionSelect(options, key) {
+        for(var i=0; i<options.length; i++){
+          var option = options[i];
+          if(option.id === key) {
+            option.className = option.className + ' option-selected'
+          } else {
+            option.className = option.className.replace('option-selected', '');
+          }
+        }
+      }
+
+      function clickOptions(options) {
+        for(var i=0; i<options.length; i++) {
+          let option = options[i];
+          option.addEventListener('click', function(event){
+            let key = event.target.id;
+            let value = event.target.innerHTML;
+
+            showInput.value = value;
+            keyInput.value = key;
+
+            setOptionSelect(options, key);
+
+            event.target.parentNode.className = event.target.parentNode.className + ' input-hide';
+          })
+        }
+      }
+
+      selectGroup.addEventListener('click', function(event) {
+        if(event.target.name === 'show') {
+          let ul = event.target.parentNode.getElementsByTagName('ul')[0];
+          if(ul.className.indexOf('input-hide') >= 0) {
+            ul.className = ul.className.replace('input-hide', '');
+          } else {
+            ul.className = ul.className + ' input-hide';
+          }
+        }
+      })
+    }
+  }
+
   addPanelClickEvent();
   formShouQi();
+  selectGroupOption();
 
 })(window, document)
